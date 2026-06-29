@@ -3,31 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>لوحة تحكم الأعمال</title>
+<title>Tiger-X Business | لوحة الأعمال</title>
 <link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="sidebar">
-  <div class="logo">🐯 Tiger-X Business</div>
+  <div class="logo"><span>🐯</span> Tiger-X</div>
   <nav>
-    <a href="#" class="active">🏠 الرئيسية</a>
-    <a href="#">📦 المنتجات</a>
-    <a href="#">👥 العملاء</a>
-    <a href="#">🧾 الفواتير</a>
-    <a href="#">📊 التقارير</a>
+    <a href="#" class="nav-link active" data-page="home">🏠 الرئيسية</a>
+    <a href="#" class="nav-link" data-page="invoices">🧾 الفواتير</a>
+    <a href="#" class="nav-link" data-page="clients">👥 العملاء</a>
+    <a href="#" class="nav-link" data-page="products">📦 المنتجات</a>
+    <a href="#" class="nav-link" data-page="reports">📊 التقارير</a>
   </nav>
+  <div class="sidebar-footer">Tiger-X Studio © 2026</div>
 </div>
 <div class="main">
   <div class="topbar">
-    <h2>مرحباً، Tiger 👋</h2>
-    <span class="date" id="date"></span>
+    <div>
+      <h2 id="page-title">الرئيسية</h2>
+      <span class="date" id="date"></span>
+    </div>
+    <div class="user-badge">🐯 Tiger</div>
   </div>
-  <div class="cards">
-    <div class="card">💰 <span>الإيرادات</span><h3>12,500 ج</h3></div>
-    <div class="card">🧾 <span>الفواتير</span><h3>34</h3></div>
-    <div class="card">👥 <span>العملاء</span><h3>18</h3></div>
-    <div class="card">📦 <span>المنتجات</span><h3>56</h3></div>
-  </div>
+  <div id="content"></div>
 </div>
 <script src="js/app.js"></script>
 </body>
